@@ -12,6 +12,8 @@ const dummyApiResponse = {
   showscrollindicator: true,
   showsearchautocomplete: true,
   showqrcodegenerator: true,
+  showweather: true,
+  showstarrating: true,
 };
 
 function featureFlagDataServiceCall() {

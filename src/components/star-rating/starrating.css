@@ -1,0 +1,13 @@
+.active {
+  color: #ffbb00; /* This is gold color */
+}
+
+.inactive {
+  color: #ddd; /* This is the default color */
+}
+
+.rating {
+  display: inline-block;
+  background-color: transparent;
+  margin-left: 400px;
+}

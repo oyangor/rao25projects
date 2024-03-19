@@ -16,6 +16,7 @@ import ScrollIndicator from "../scroll-idicator/index.jsx";
 import SearchAutoComplete from "../search-auto-complete-with-API/index.jsx";
 import QrCodeGenerator from "../qr-code-generator/index.jsx";
 import Weather from "../weather-forecast/index.jsx";
+import StarRating from "../star-rating/StarRating.jsx";
 
 export default function FeatureFlags() {
   const { enabledFlags, loading } = useContext(FeatureFlagsContext);
@@ -41,6 +42,7 @@ export default function FeatureFlags() {
       key: "showTicTacToeBoard",
       component: <TicTacToe />,
     },
+
     {
       key: "showTabs",
       component: <TabTest />,
@@ -82,9 +84,14 @@ export default function FeatureFlags() {
       component: <QrCodeGenerator />,
     },
     {
-      key: "showqrcodegenerator",
+      key: "showweather",
       component: <Weather />,
     },
+    {
+      key: "showstarrating",
+      component: <StarRating numberOfStars={10} />,
+    },
+
   ];
 
   function checkEnabledFlags(currentKey) {
