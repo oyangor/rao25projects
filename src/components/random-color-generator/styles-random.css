@@ -1,0 +1,19 @@
+.app-container {
+  margin-left: 30%;
+  margin-right: 30%;
+}
+.title {
+  margin-left: 17%;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.box {
+  width: 150px;
+  height: 150px;
+  margin-left: 40%;
+  margin-top: 20px;
+}
